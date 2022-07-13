@@ -8,7 +8,6 @@ export const formarea = styled.div`
     margin: 5px;
     display: flex;
     padding: 20px 0px;
-    
 `
 export const label = styled.label`
     flex: 20%;
