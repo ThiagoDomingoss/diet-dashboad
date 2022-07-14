@@ -55,24 +55,25 @@ export const foodForm = styled.div`
     background-color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
     border-radius: 20px;
 `
 export const formArea = styled.div`
     margin: 5px;
-    padding: 15px 0px;
+    padding: 15px 40px;
+    display: flex;
 `
 export const formMeal = styled.div`
     margin: 5px;
     display: flex;
     flex-direction: column;
-    padding: 20px 0px;
+    padding: 20px;
 `
 export const label = styled.label`
     text-align: left;
     padding: 5px;
     font-size: 18px;
     font-weight: 600;
+    flex: 20%;
 `
 export const inputFood = styled.textarea` 
     width: 100%;
@@ -84,4 +85,13 @@ export const inputMacro = styled.input`
     width: 35px;
     padding: 5px;
     border-radius: 7px;
+`
+export const button = styled.button`
+    padding: 10px;
+    margin: 0px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
 `

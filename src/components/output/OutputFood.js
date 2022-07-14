@@ -8,7 +8,8 @@ const OutputFood = () => {
        'arroz com frango',
        'shake proteico',
        'batata doce e patinho',
-       'whey com aveia'
+       'whey com aveia',
+       '4 ovos, 100g tapioca, 100g queijo branco, sal a gosto'
     ]
 
     return(
