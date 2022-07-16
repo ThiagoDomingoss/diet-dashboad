@@ -27,28 +27,28 @@ const FoodInput = () => {
                 <c.formArea>
                     <c.label>proteinas</c.label>
                     <c.inputMacro type="number" onChange={(e) => {
-                        setProt(e.target.value)
+                        setProt(e.target.valueAsNumber)
                     }}></c.inputMacro>
                 </c.formArea>
 
                 <c.formArea>
                     <c.label>carboidratos</c.label>
                     <c.inputMacro type="number" onChange={(e) => {
-                        setCarb(e.target.value)
+                        setCarb(e.target.valueAsNumber)
                     }}></c.inputMacro>
                 </c.formArea>
 
                 <c.formArea>
                     <c.label>gorduras</c.label>
                     <c.inputMacro type="number" onChange={(e) => {
-                        setGord(e.target.value)
+                        setGord(e.target.valueAsNumber)
                     }}></c.inputMacro>
                 </c.formArea>
 
                 <c.formArea>
                     <c.label>Kcal</c.label>
                     <c.inputMacro type="number" onChange={(e) => {
-                        setKcal(e.target.value)
+                        setKcal(e.target.valueAsNumber)
                     }}></c.inputMacro>
                 </c.formArea>
 

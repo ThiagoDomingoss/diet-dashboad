@@ -12,7 +12,10 @@ export const macroSlice = createSlice({
             state.value[3].goal = action.payload.kcal
         },
         inputDone: (state, action) => {
-
+            state.value[0].done = action.payload.prot
+            state.value[1].done = action.payload.carb
+            state.value[2].done = action.payload.gord
+            state.value[3].done = action.payload.kcal
         }
     }
 })

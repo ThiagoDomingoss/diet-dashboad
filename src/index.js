@@ -6,11 +6,13 @@ import {configureStore} from '@reduxjs/toolkit'
 import { Provider } from 'react-redux';
 
 import foodreducer from './reducers/FoodReducer';
-import macroreducer from './reducers/DashboardReducer'
+import macroreducer from './reducers/DashboardReducer';
+import mealreducer from './reducers/MealReducer';
 const store = configureStore({
   reducer: {
     foods: foodreducer,
-    macros: macroreducer
+    macros: macroreducer,
+    meal: mealreducer
   }
 })
 

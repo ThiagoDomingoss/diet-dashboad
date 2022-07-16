@@ -88,5 +88,57 @@ export const tr = styled.tr`
 export const td = styled.td`
     padding: 10px;
     font-size: 18px;
+`
+export const button = styled.button`
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+`
 
+
+
+
+export const foodContainer = styled.div`
+    background-color: white;
+    height: 80%;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: -20%;
+`
+export const item = styled.div`
+    width: 90%;
+    min-height: 60px;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+`
+export const index = styled.div`
+    width: 5%;
+    margin: 5px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+export const content = styled.div`
+    width: 80%;
+    margin: 5px;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+`
+export const btn = styled.button`
+    width: 10%;
+    margin: 5px;
+    background-color: green;
 `
