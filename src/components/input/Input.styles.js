@@ -1,13 +1,17 @@
 import styled from "styled-components";
 
-export const form = styled.form`
-    padding: 5px;
-    text-align: center;
+export const form = styled.div`
+    width: 300px;
+    height: 80%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
 `
 export const formarea = styled.div`
     margin: 5px;
     display: flex;
-    padding: 20px 0px;
+    padding: 20px 10px;
 `
 export const label = styled.label`
     flex: 20%;
@@ -22,8 +26,8 @@ export const input = styled.input`
     border-radius: 7px;
 `
 export const button = styled.button`
-    padding: 5px;
-    margin: 0px 10px;
+    padding: 10px;
+    margin: 10px;
     font-size: 16px;
     font-weight: 600;
     background-color: green;
@@ -32,9 +36,10 @@ export const button = styled.button`
 `
 export const textarea = styled.div`
     margin: 15px 5px;
-    padding: 20px 0px;
+    padding: 10px;
     background-color: #ff7700;
     border-radius: 10px;
+    text-align: center;
 `
 export const texttitle = styled.span`
     font-size: 1.5rem;

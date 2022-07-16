@@ -6,9 +6,11 @@ import {configureStore} from '@reduxjs/toolkit'
 import { Provider } from 'react-redux';
 
 import foodreducer from './reducers/FoodReducer';
+import macroreducer from './reducers/DashboardReducer'
 const store = configureStore({
   reducer: {
     foods: foodreducer,
+    macros: macroreducer
   }
 })
 

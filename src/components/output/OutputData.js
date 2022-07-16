@@ -1,0 +1,22 @@
+export const macros = [
+    {
+        name:'Proteinas',
+        goal:0,
+        done:0
+    },
+    {
+        name:'Carboidratos',
+        goal:0,
+        done:0
+    },
+    {
+        name:'Gorduras',
+        goal:0,
+        done:0
+    },
+    {
+        name:'Calorias',
+        goal:0,
+        done:0
+    },
+]

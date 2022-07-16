@@ -13,7 +13,7 @@ export const macroContainer = styled.div`
     justify-content: space-between;
 `
 export const macro = styled.div`
-    width: 200px;
+    width: 150px;
     display: flex;
     flex-direction: column;
     background-color: white;

@@ -19,7 +19,7 @@ const OutputFood = () => {
                 <c.tbody>
                   {foodlist.map((item, index) => {
                     return(
-                        <c.tr>
+                        <c.tr key={index}>
                             <c.td>{index + 1}</c.td>
                             <c.td>{item}</c.td>
                         </c.tr>
