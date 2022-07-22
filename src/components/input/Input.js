@@ -57,25 +57,25 @@ const Input = () => {
         <c.form>
             <c.formarea>
                 <c.label>Peso</c.label>
-                <c.input type="number" onChange={(e) => {onHandlePeso(e)}} value={peso}></c.input>
+                <c.input required type="number" onChange={(e) => {onHandlePeso(e)}} value={peso}></c.input>
                 <c.label>Kg</c.label>
             </c.formarea>
             
             <c.formarea>
                 <c.label>Proteina</c.label>
-                <c.input type="number" onChange={(e) => {onHandleProtein(e)}} value={protein}></c.input>
+                <c.input required type="number" onChange={(e) => {onHandleProtein(e)}} value={protein}></c.input>
                 <c.label>g/Kg</c.label>
             </c.formarea>
 
             <c.formarea>
                 <c.label>Carboidrato</c.label>
-                <c.input type="number" onChange={(e) => {onHandleCarbo(e)}} value={carbo}></c.input>
+                <c.input required type="number" onChange={(e) => {onHandleCarbo(e)}} value={carbo}></c.input>
                 <c.label>g/Kg</c.label>
             </c.formarea>
 
             <c.formarea>
                 <c.label>Gordura</c.label>
-                <c.input type="number" onChange={(e) => {onHandleGord(e)}} value={gord}></c.input>
+                <c.input required type="number" onChange={(e) => {onHandleGord(e)}} value={gord}></c.input>
                 <c.label>g/Kg</c.label>
             </c.formarea>
 
@@ -84,7 +84,7 @@ const Input = () => {
             <c.button onClick={() => {
                 dispatch(inputGoals({prot: dailyProt, carb: dailyCarb, gord: dailyGord, kcal: dailykcal}))
             }}>Calcular</c.button>
-            <c.button>Reset</c.button>
+            
                 
 
             <c.textarea>

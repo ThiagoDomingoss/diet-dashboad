@@ -46,34 +46,34 @@ const Modal = (props) => {
                 <c.formArea>
                     <c.label>proteinas</c.label>
                     <c.inputMacro value={prot} type="number" onChange={(e) => {
-                        setProt(e.target.value)
+                        setProt(e.target.valueAsNumber)
                     }}></c.inputMacro>
                 </c.formArea>
 
                 <c.formArea>
                     <c.label>carboidratos</c.label>
                     <c.inputMacro value={carb} type="number" onChange={(e) => {
-                        setCarb(e.target.value)
+                        setCarb(e.target.valueAsNumber)
                     }}></c.inputMacro>
                 </c.formArea>
 
                 <c.formArea>
                     <c.label>gorduras</c.label>
                     <c.inputMacro value={gord} type="number" onChange={(e) => {
-                        setGord(e.target.value)
+                        setGord(e.target.valueAsNumber)
                     }}></c.inputMacro>
                 </c.formArea>
 
                 <c.formArea>
                     <c.label>Kcal</c.label>
                     <c.inputMacro type="number" onChange={(e) => {
-                        setKcal(e.target.value)
+                        setKcal(e.target.valueAsNumber)
                     }} value={kcal}></c.inputMacro>
                 </c.formArea>
 
                 <c.button onClick={() => {
                     dispatch(updateFood({id: id, meal: meal, prot: prot, carb: carb, gord: gord, kcal: kcal}))
-                    }}>Adicionar</c.button>
+                    }}>Salvar</c.button>
 
                 <c.button onClick={() => {setShow(false)}}>Cancelar</c.button>
             </c.foodForm>

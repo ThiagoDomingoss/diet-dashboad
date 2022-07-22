@@ -3,10 +3,11 @@ import styled from "styled-components";
 export const form = styled.div`
     width: 300px;
     height: 80%;
-    background-color: white;
+    background-color: aliceblue;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
+    padding: 30px 0;
 `
 export const formarea = styled.div`
     margin: 5px;
@@ -30,9 +31,15 @@ export const button = styled.button`
     margin: 10px;
     font-size: 16px;
     font-weight: 600;
-    background-color: green;
+    background-color: #7CB9E8;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+
+    :hover{
+        background-color: #00308F;
+        color: aliceblue;
+    }
 `
 export const textarea = styled.div`
     margin: 15px 5px;

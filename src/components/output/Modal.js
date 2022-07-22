@@ -32,7 +32,7 @@ const Modal = (props) => {
                     </c.content>
                     <c.btn onClick={() => {
                     dispatch(inputMeals({id: meal[meal.length - 1].id + 1 ,meal: food.meal, prot: food.prot, carb: food.carb, gord: food.gord, kcal: food.kcal, data: dailyData}))
-                    }}>Adicionar</c.btn>
+                    }}>Add</c.btn>
                 </c.item>
                     )
                 })}

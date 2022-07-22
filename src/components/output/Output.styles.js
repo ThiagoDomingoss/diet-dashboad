@@ -6,20 +6,27 @@ export const outputContainer = styled.div`
     justify-content: center;
 `
 export const macroContainer = styled.div`
-    width: 800px;
+    width: 100%;
     height: 150px;
     margin: 10px 0;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
 `
 export const macro = styled.div`
     width: 150px;
+    height: 100px;
     display: flex;
     flex-direction: column;
-    background-color: white;
-    gap: 10px;
+    background-color: aliceblue;
+    margin: 10px;
     padding: 10px 15px;
     border-radius: 10px;
+
+    @media (max-width: 400px) {
+        width: 300px;
+    }
 `
 export const title = styled.h3`
 
@@ -27,7 +34,7 @@ export const title = styled.h3`
 export const number = styled.div`
     font-size: 2rem;
     font-weight: bold;
-    color: green;
+    color: #7CB9E8;
 `
 export const sub = styled.p`
     color: grey;
@@ -35,16 +42,26 @@ export const sub = styled.p`
 
 
 export const metaContainer = styled.div`
-    width: 800px;
-    height: 420px;
+    width: 100%;
+    height: 450px;
+    margin: 10px 0;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    @media (max-width: 660px) {
+        height: 900px;
+        justify-content: center;
+        gap: 20px;
+    }
+
 `
 export const total = styled.div`
     width: 300px;
+    height: 400px;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: aliceblue;
     gap: 10px;
     padding: 10px 15px;
     border-radius: 10px;
@@ -56,7 +73,7 @@ export const numberMeta = styled.div`
     font-size: 6rem;
     font-weight: bold;
     margin: 20px 0;
-    color: green;
+    color: #7CB9E8;
 `
 export const subMeta = styled.p`
     color: grey;
@@ -65,12 +82,22 @@ export const subMeta = styled.p`
 
 export const food = styled.div`
     width: 400px;
+    height: 400px;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: aliceblue;
     gap: 10px;
     padding: 10px 15px;
     border-radius: 10px;
+    overflow: auto;
+
+    @media (max-width: 800px) {
+        width: 300px;
+    }
+
+    @media (max-width: 400px) {
+        width: 300px;
+    }
 `
 export const titleFood = styled.h1`
     font-size: 3rem;
@@ -83,7 +110,7 @@ export const tbody = styled.tbody`
 `
 export const tr = styled.tr`
     padding: 10px;
-    background-color: green;
+    background-color: #7CB9E8;
 `
 export const td = styled.td`
     padding: 10px;
@@ -94,51 +121,91 @@ export const button = styled.button`
     margin: 5px;
     font-size: 16px;
     font-weight: 600;
-    background-color: green;
+    background-color: #7CB9E8;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+
+    :hover{
+        background-color: #00308F;
+        color: aliceblue;
+    }
 `
 
 
 
 
 export const foodContainer = styled.div`
-    background-color: white;
+    background-color: aliceblue;
     height: 80%;
-    width: 900px;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
     position: absolute;
-    margin-top: -20%;
+    margin-top: -10%;
+    overflow: auto;
+    padding: 10px 0;
+
+    @media (max-width: 900px) {
+        width: 100%;
+        height: 100vh;
+        margin-top: 200px;
+    }
 `
 export const item = styled.div`
     width: 90%;
-    min-height: 60px;
+    min-height: 80px;
     background-color: white;
     margin-top: 10px;
     border-radius: 10px;
     display: flex;
+    
+    @media (max-width: 900px){
+        min-height: 120px;
+    }
 `
 export const index = styled.div`
     width: 5%;
     margin: 5px;
-    background-color: green;
+    background-color: #7CB9E8;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
+
+    @media (max-width: 1400px){
+        display: none;
+    }
 `
 export const content = styled.div`
     width: 80%;
     margin: 5px;
-    background-color: green;
+    background-color: #7CB9E8;
     display: flex;
     flex-direction: column;
     padding-left: 10px;
+    border-radius: 5px;
+
+    @media (max-width: 1400x){
+        width: 85%;
+    }
+
 `
 export const btn = styled.button`
-    width: 10%;
+    width: 80px;
     margin: 5px;
-    background-color: green;
+    background-color: #7CB9E8;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    :hover{
+        background-color: #00308F;
+        color: aliceblue;
+    }
 `

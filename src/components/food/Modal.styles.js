@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const foodForm = styled.div`
     width: 300px;
-    height: 70%;
-    background-color: white;
+    height: 600px;
+    background-color: aliceblue;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -43,7 +43,13 @@ export const button = styled.button`
     margin: 10px 30px;
     font-size: 16px;
     font-weight: 600;
-    background-color: green;
+    background-color: #7CB9E8;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+
+    :hover{
+        background-color: #00308F;
+        color: aliceblue;
+    }
 `

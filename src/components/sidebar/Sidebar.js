@@ -13,7 +13,7 @@ const Sidebar = () => {
         {
             name:'Food List',
             link:'Food'
-        }
+        },
     ];
         
     const [main, setMain] = useState('')

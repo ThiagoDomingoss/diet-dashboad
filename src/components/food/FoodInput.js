@@ -19,35 +19,35 @@ const FoodInput = () => {
         <c.foodForm>
                 <c.formMeal>
                     <c.label>ingredientes</c.label>
-                    <c.inputFood onChange={(e) => {
+                    <c.inputFood required onChange={(e) => {
                         setMeal(e.target.value)
                     }}></c.inputFood>
                 </c.formMeal>
 
                 <c.formArea>
                     <c.label>proteinas</c.label>
-                    <c.inputMacro type="number" onChange={(e) => {
+                    <c.inputMacro required type="number" onChange={(e) => {
                         setProt(e.target.valueAsNumber)
                     }}></c.inputMacro>
                 </c.formArea>
 
                 <c.formArea>
                     <c.label>carboidratos</c.label>
-                    <c.inputMacro type="number" onChange={(e) => {
+                    <c.inputMacro required type="number" onChange={(e) => {
                         setCarb(e.target.valueAsNumber)
                     }}></c.inputMacro>
                 </c.formArea>
 
                 <c.formArea>
                     <c.label>gorduras</c.label>
-                    <c.inputMacro type="number" onChange={(e) => {
+                    <c.inputMacro required type="number" onChange={(e) => {
                         setGord(e.target.valueAsNumber)
                     }}></c.inputMacro>
                 </c.formArea>
 
                 <c.formArea>
                     <c.label>Kcal</c.label>
-                    <c.inputMacro type="number" onChange={(e) => {
+                    <c.inputMacro required type="number" onChange={(e) => {
                         setKcal(e.target.valueAsNumber)
                     }}></c.inputMacro>
                 </c.formArea>

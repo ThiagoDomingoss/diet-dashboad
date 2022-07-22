@@ -8,13 +8,13 @@ const OutputMeta = () => {
     const total = macros[3]
     const done = total.done * 100
     const goal = total.goal
-    const percent = (Math.floor(done / goal))
+    const percent = (Math.floor(done / goal) ? Math.floor(done / goal) : 0)
 
     return(
         <c.total>
             <c.titleMeta>Total</c.titleMeta>
             <c.numberMeta>{percent}%</c.numberMeta>
-            <c.subMeta>2250/3000cal</c.subMeta>
+            <c.subMeta>atingidos hoje</c.subMeta>
         </c.total>
     )
 

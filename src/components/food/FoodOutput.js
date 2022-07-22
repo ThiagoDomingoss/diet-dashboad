@@ -28,10 +28,12 @@ const FoodOutput = () => {
                         <h3>{food.meal}</h3>
                         <p>prot: {food.prot} | carb: {food.carb} | gord: {food.gord} | kcal: {food.kcal}</p>
                     </c.content>
+                    <c.btns>
                     <c.btn onClick={() => {Edit(food.id)}}>edit</c.btn>
                     <c.btn onClick={() => {
                         dispatch(removeFood(food.id))
                     }}>del</c.btn>
+                    </c.btns>
                 </c.item>
                     )
                 })}
