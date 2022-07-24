@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import * as c from './Sidebar-styles';
+import * as c from './Navbar-styles';
 import Food from "../food/Food";
 import Dashboard from "../dashboard/Dashboard";
 
 
-const Sidebar = () => {
+const Navbar = () => {
     const listMenu = [
         {
             name:'Dashboard',
@@ -29,11 +29,11 @@ const Sidebar = () => {
             </c.list>
         </c.container>
         <c.info>
-                   {main === 'Dashboard'? <Dashboard/> : <Food/>}
+                   {main === 'Food'? <Food/>: <Dashboard/>}
         </c.info>
 
         </c.body>
     )
 }
 
-export default Sidebar;
+export default Navbar;

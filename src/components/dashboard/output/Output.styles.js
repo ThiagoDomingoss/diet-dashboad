@@ -84,6 +84,7 @@ export const food = styled.div`
     width: 400px;
     height: 400px;
     display: flex;
+    position: relative;
     flex-direction: column;
     background-color: aliceblue;
     gap: 10px;
@@ -91,10 +92,13 @@ export const food = styled.div`
     border-radius: 10px;
     overflow: auto;
 
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+
     @media (max-width: 800px) {
         width: 300px;
     }
-
     @media (max-width: 400px) {
         width: 300px;
     }
@@ -137,26 +141,39 @@ export const button = styled.button`
 
 export const foodContainer = styled.div`
     background-color: aliceblue;
-    height: 80%;
-    width: 60%;
+    width: 400px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
     position: absolute;
-    margin-top: -10%;
+    margin-right: -24%;
     overflow: auto;
-    padding: 10px 0;
+    padding: 10px 15px;
 
-    @media (max-width: 900px) {
-        width: 100%;
-        height: 100vh;
-        margin-top: 200px;
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    @media (max-width: 1290px) {
+        margin-right: -28%;
+    }
+    @media (max-width: 1103px) {
+        margin-right: -33%;
+    }
+    @media (max-width: 937px) {
+        margin-right: -38%;
+    }
+    @media (max-width: 660px) {
+        margin-top: 460px;
+        margin-right: 0;
+        width: 300px;
     }
 `
 export const item = styled.div`
-    width: 90%;
-    min-height: 80px;
+    width: 95%;
+    min-height: 100px;
     background-color: white;
     margin-top: 10px;
     border-radius: 10px;
@@ -166,19 +183,19 @@ export const item = styled.div`
         min-height: 120px;
     }
 `
-export const index = styled.div`
-    width: 5%;
-    margin: 5px;
-    background-color: #7CB9E8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
+// export const index = styled.div`
+//     width: 5%;
+//     margin: 5px;
+//     background-color: #7CB9E8;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     border-radius: 5px;
 
-    @media (max-width: 1400px){
-        display: none;
-    }
-`
+//     @media (max-width: 1400px){
+//         display: none;
+//     }
+// `
 export const content = styled.div`
     width: 80%;
     margin: 5px;

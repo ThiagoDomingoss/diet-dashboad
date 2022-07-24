@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import * as c from "./Input.styles";
 import { useDispatch } from "react-redux";
-import { inputGoals } from "../../reducers/DashboardReducer";
+import { inputGoals } from "../../../reducers/DashboardReducer";
 
 
 const Input = () => {
@@ -51,6 +51,11 @@ const Input = () => {
         setGord(JSON.parse(localStorage.getItem('gord'))??'')
     }, [])
     
+    useEffect(()=>{
+        const macros = JSON.parse(localStorage.getItem('dailymacros'))??[];
+        dispatch(inputGoals(macros))
+        
+    },[])
     
 
     return(
@@ -82,7 +87,7 @@ const Input = () => {
             
             
             <c.button onClick={() => {
-                dispatch(inputGoals({prot: dailyProt, carb: dailyCarb, gord: dailyGord, kcal: dailykcal}))
+                dispatch(inputGoals([dailyProt, dailyCarb, dailyGord, dailykcal]))
             }}>Calcular</c.button>
             
                 

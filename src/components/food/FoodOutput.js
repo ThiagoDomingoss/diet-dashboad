@@ -20,7 +20,9 @@ const FoodOutput = () => {
 
     return(
         <c.foodContainer>
-                {foods.map((food, index)=>{
+                {foods.length === 0 ? 
+                <c.itemvazio>Adicione refeições a sua lista</c.itemvazio> : 
+                foods.map((food, index)=>{
                     return(
                     <c.item key={index}>
                     <c.index>{index+1}</c.index>

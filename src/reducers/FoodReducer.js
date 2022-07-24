@@ -1,15 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { foods } from "../components/food/FoodsData";
+
 
 export const foodSlice = createSlice({
     name:'food', 
-    initialState: {value: foods},
+    initialState: {value: JSON.parse(localStorage.getItem('lista'))?? []},
     reducers: {
         addFood: (state, action) => {
             state.value.push(action.payload);
+            localStorage.setItem('lista', JSON.stringify(state.value))
         },
         removeFood: (state, action) => {
             state.value = state.value.filter((food) => food.id !== action.payload)
+            localStorage.setItem('lista', JSON.stringify(state.value))
         },
         updateFood: (state, action) => {
             state.value.map((food) => {
@@ -21,6 +23,7 @@ export const foodSlice = createSlice({
                     food.kcal = action.payload.kcal;
                 }
             })
+            localStorage.setItem('lista', JSON.stringify(state.value))
         }
     }
 })

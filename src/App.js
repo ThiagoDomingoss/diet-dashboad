@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import Header from "./components/header/Header"
-import Sidebar from './components/sidebar/Sidebar';
+import Navbar from './components/navbar/Navbar';
 
 function App() {
   return (
     <>
     <Header/>
-    <Sidebar/>
+    <Navbar/>
     </>
   );
 }

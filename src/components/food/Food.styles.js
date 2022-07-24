@@ -20,13 +20,35 @@ export const foodContainer = styled.div`
     overflow: auto;
     padding: 10px 0;
 
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+
     @media (max-width: 800px) {
         width: 100%;
         border-radius: 0;
     }
 `
+
+export const itemvazio = styled.div`
+    width: 600px;
+    min-height: 80px;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+
+    @media (max-width: 600px) {
+        min-height: 120px;
+        width: 90%;
+    }
+`
 export const item = styled.div`
-    width: 90%;
+    width: 480px;
     min-height: 80px;
     background-color: white;
     margin-top: 10px;
@@ -35,6 +57,7 @@ export const item = styled.div`
 
     @media (max-width: 600px) {
         min-height: 120px;
+        width: 90%;
     }
 `
 export const index = styled.div`

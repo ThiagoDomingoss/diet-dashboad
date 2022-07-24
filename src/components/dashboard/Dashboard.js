@@ -1,7 +1,7 @@
 import React from "react";
 import * as c from './Dashboard.styles'
-import Input from "../input/Input";
-import Output from "../output/Output";
+import Input from "./input/Input";
+import Output from "./output/Output";
 
 const Dashboard = () => {
     return(

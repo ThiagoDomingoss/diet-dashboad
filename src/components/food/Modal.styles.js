@@ -1,13 +1,17 @@
 import styled from "styled-components";
 
 export const foodForm = styled.div`
-    width: 300px;
-    height: 600px;
+    width: 500px;
+    height: 95%;
     background-color: aliceblue;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
     position: absolute;
+
+    @media(max-width: 800px){
+        width: 100%;
+    }
 `
 export const formArea = styled.div`
     margin: 5px;

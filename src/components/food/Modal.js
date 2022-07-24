@@ -73,6 +73,7 @@ const Modal = (props) => {
 
                 <c.button onClick={() => {
                     dispatch(updateFood({id: id, meal: meal, prot: prot, carb: carb, gord: gord, kcal: kcal}))
+                    setShow(false)
                     }}>Salvar</c.button>
 
                 <c.button onClick={() => {setShow(false)}}>Cancelar</c.button>

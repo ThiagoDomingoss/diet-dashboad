@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import * as c from './Output.styles'
 import { useSelector , useDispatch } from "react-redux";
 import Modal from "./Modal";
-import { removeMeals } from "../../reducers/MealReducer";
-import{ inputDone} from '../../reducers/DashboardReducer'
+import { removeMeals } from "../../../reducers/MealReducer";
+import{ inputDone} from '../../../reducers/DashboardReducer'
 
 const OutputFood = () => {
     
@@ -32,7 +32,7 @@ const OutputFood = () => {
     }, [filteredMeals])
 
     useEffect(()=>{
-        dispatch(inputDone({prot: dayProt, carb: dayCarb, gord: dayGord, kcal: dayKcal}))
+        dispatch(inputDone([dayProt, dayCarb, dayGord, dayKcal]))
     }, [dayProt, dayCarb, dayGord, dayKcal])
 
     return(

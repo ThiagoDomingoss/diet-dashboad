@@ -1,16 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { meal } from "../components/output/MealData";
 
 
 export const mealSlice = createSlice({
     name:'meal', 
-    initialState: {value: meal},
+    initialState: {value: JSON.parse(localStorage.getItem('refeicoes'))?? []},
     reducers: {
         inputMeals: (state, action) => {
             state.value.push(action.payload);
+            localStorage.setItem('refeicoes', JSON.stringify(state.value))
         },
         removeMeals: (state, action) => {
             state.value = state.value.filter((meal) => meal.id !== action.payload)
+            localStorage.setItem('refeicoes', JSON.stringify(state.value))
         },
     }
 })
