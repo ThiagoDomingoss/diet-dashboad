@@ -1,5 +1,7 @@
 ## project diet-dashboard
 
+Link do projeto: https://diet-dashboard.netlify.app/
+
 ### tecnologias
  - REACT
  - REACT-REDUX
