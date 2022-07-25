@@ -2,9 +2,12 @@ import React from "react";
 import * as c from './Output.styles'
 import { useSelector } from "react-redux";
 
+
 const OutputMacro = () => {
 
     const macros = useSelector((state) => state.macros.value)
+
+    
 
     return(
         <>

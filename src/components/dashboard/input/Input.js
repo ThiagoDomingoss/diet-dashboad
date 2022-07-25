@@ -20,41 +20,40 @@ const Input = () => {
     
 
     const onHandlePeso = (e) => {
-        const peso = e.target.value;
+        const peso = e.target.valueAsNumber;
         localStorage.setItem('peso', JSON.stringify(peso));
         setPeso(peso)
     }
 
     const onHandleProtein = (e) => {
-        const protein = e.target.value;
+        const protein = e.target.valueAsNumber;
         localStorage.setItem('protein', JSON.stringify(protein));
         setProtein(protein)
     }
 
     const onHandleCarbo = (e) => {
-        const carbo = e.target.value;
+        const carbo = e.target.valueAsNumber;
         localStorage.setItem('carbo', JSON.stringify(carbo));
         setCarbo(carbo)
     }
 
     const onHandleGord = (e) => {
-        const gord = e.target.value;
+        const gord = e.target.valueAsNumber;
         localStorage.setItem('gord', JSON.stringify(gord));
         setGord(gord)
     }
 
 
     useEffect(() => {
-        setPeso(JSON.parse(localStorage.getItem('peso'))??'')
-        setProtein(JSON.parse(localStorage.getItem('protein'))??'')
-        setCarbo(JSON.parse(localStorage.getItem('carbo'))??'')
-        setGord(JSON.parse(localStorage.getItem('gord'))??'')
+        setPeso(JSON.parse(localStorage.getItem('peso'))??0)
+        setProtein(JSON.parse(localStorage.getItem('protein'))??0)
+        setCarbo(JSON.parse(localStorage.getItem('carbo'))??0)
+        setGord(JSON.parse(localStorage.getItem('gord'))??0)
     }, [])
     
     useEffect(()=>{
-        const macros = JSON.parse(localStorage.getItem('dailymacros'))??[];
+        const macros = JSON.parse(localStorage.getItem('dailymacros'))??[0, 0, 0, 0]
         dispatch(inputGoals(macros))
-        
     },[])
     
 
